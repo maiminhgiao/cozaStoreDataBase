@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- bài 1 -->
+    <div class="container">
+        <form><br>
+        <h2>1. Sort number</h2>
+            <label>Num 1</label><br>
+            <input type="text" id="num1" name="num1" value=""><br>
+
+            <label>Num 2</label><br>
+            <input type="text" id="num2" name="num2" value=""><br>
+
+            <label>Num 3</label><br>
+            <input type="text" id="num3" name="num3" value=""><br>
+
+            <br>
+            <button type="button" class="btn btn-primary" onclick="sortNumber()">Sort Number</button>
+            <br><br>
+            <div id="resultSort"></div>
+        </form>
+    </div>  
+
+<!-- bài 2 -->
+    <div class="container">
+        <form><br>
+        <h2>2. Greetings</h2>
+            <label>Who are you?</label><br>
+           <select name="" id="member">
+            <option value="D">Dad (D)</option>
+            <option value="M">Mother (M)</option>
+            <option value="B">Brother (B)</option>
+            <option value="S">Sister (S)</option>
+            <option value="A">Another (A)</option>
+           </select>
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="greetingsFamily()">Hello</button>
+            <br><br>
+            <div id="resultGreetings"></div>
+        </form>
+    </div> 
+    
+ <!-- bài 3 -->
+ <div class="container">
+    <form><br>
+    <h2>3. Even Odd number</h2>
+        <label>Num 1</label><br>
+        <input type="text" id="numa" name="numa" value=""><br>
+
+        <label>Num 2</label><br>
+        <input type="text" id="numb" name="numb" value=""><br>
+
+        <label>Num 3</label><br>
+        <input type="text" id="numc" name="numc" value=""><br>
+
+        <br>
+        <button type="button" class="btn btn-primary" onclick="evenOddNumber()">Sort Number</button>
+        <br><br>
+        <div id="resultCheck"></div>
+    </form>
+</div>  
+
+
+<!-- bài 4 -->
+<div class="container">
+    <form><br>
+    <h2>4. Check Whether a Triangle</h2>
+        <label>length 1</label><br>
+        <input type="text" id="length1" name="length1" value=""><br>
+
+        <label>length 2</label><br>
+        <input type="text" id="length2" name="length2" value=""><br>
+
+        <label>length 3</label><br>
+        <input type="text" id="length3" name="length3" value=""><br>
+
+        <br>
+        <button type="button" class="btn btn-primary" onclick="checkWhetherATrianle()">Check Triangle</button>
+        <br><br>
+        <div id="resultCheckLength"></div>
+    </form>
+</div>  
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="BT.js"></script>
+
+
+
+</body>
+</html>

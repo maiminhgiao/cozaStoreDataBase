@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- bài 1 -->
+    <div class="container">
+        <br>
+        <h2>Bài 1. Calculate salary</h2><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="salary_per_day">Salary per day:</label>
+                    <input type="text" name="salary_per_day" id="salary_per_day" class="form-control"
+                        placeholder="Enter salary per day">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="work_day">Work day:</label>
+                    <input type="text" name="work_day" id="work_day" class="form-control" placeholder="Enter work day">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-danger" onclick="salaryPerDay()"> Calculate</button>
+        <br> <br>
+        <div id="result"></div>
+    </div>
+
+    <!-- bài 2 -->
+
+    <div class="container">
+        <br>
+        <h2>Bài 2. Calculate Average </h2><br>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num1">Number 1:</label>
+                    <input type="text" name="num1" id="num1" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num2">Number 2:</label>
+                    <input type="text" name="num2" id="num2" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num3">Number 3:</label>
+                    <input type="text" name="num3" id="num3" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num4">Number 4:</label>
+                    <input type="text" name="num4" id="num4" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num5">Number 5:</label>
+                    <input type="text" name="num5" id="num5" class="form-control">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-secondary" onclick="calAverage()"> Calculate</button>
+        <br> <br>
+        <div id="result2"></div>
+    </div>
+
+
+    <!-- bài 3 -->
+    <div class="container">
+        <br>
+        <h2>Bài 3. Quy đổi giá tiền</h2><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="so_tien_can_quy_doi">Số tiền cần quy đổi</label>
+                    <input type="text" name="so_tien_can_quy_doi" id="so_tien_can_quy_doi" class="form-control"
+                        placeholder="">
+                    <br> <span>※Tỷ giá hôm nay: <u style="color: green;">1 $ = 23,500 VND</u></span>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" onclick="quyDoiTien()">Quy đổi</button>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="ket_qua_quy_doi">Kết quả quy đổi</label>
+                    <input type="text" name="ket_qua_quy_doi" id="ket_qua_quy_doi" class="form-control" placeholder="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bài 4 -->
+    <div class="container">
+        <br>
+        <h2>Bài 4. Tính diện tích, chu vi hình chữ nhật </h2><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="chieu_dai">Chiều dài (m)</label>
+                    <input type="text" name="chieu_dai" id="chieu_dai" class="form-control" placeholder="">
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="chieu_rong">Chiều rộng (m) </label>
+                    <input type="text" name="chieu_rong" id="chieu_rong" class="form-control" placeholder="">
+                </div>
+            </div>
+
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg" onclick="tinhDienTich()">Tính diện tích</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg" onclick="tinhChuVi()">Tính chu vi</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="ket_qua_dien_tich">Diện tích (m2)</label>
+                    <input type="text" name="ket_qua_dien_tich" id="ket_qua_dien_tich" class="form-control"
+                        placeholder="">
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="ket_qua_chu_vi">Chu vi (m)</label>
+                    <input type="text" name="ket_qua_chu_vi" id="ket_qua_chu_vi" class="form-control" placeholder="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bài 5 -->
+    <div class="container">
+        <h2>Bài 5. Tính tổng 2 ký số </h2><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="so_can_tinh">Nhập ký số (là số nguyên dương có 2 chữ số)</label>
+                    <input type="text" name="so_can_tinh" id="so_can_tinh" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="ket_qua_tong">Tổng 2 ký số</label>
+                    <input type="text" name="ket_qua_tong" id="ket_qua_tong" class="form-control" placeholder=""
+                        readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-lg" onclick="tinhTong()">Tính tổng</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- js file -->
+    <script src="BT1.js"></script>
+</body>
+
+</html>

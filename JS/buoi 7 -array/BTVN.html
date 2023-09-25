@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="form-group container">
+        <label for=""></label>
+        <input type="text" name="" id="number" class="form-control" placeholder=""><br>
+        <button class="btn btn-success" onclick="addNumber()">Add</button>
+        <br> <br>
+        <div>Kết quả thêm số</div>
+        <div class=" resultAddNumber"></div><br>
+
+        <div>câu 1. Tính tổng các số dương</div>
+        <br>
+        <button class="btn btn-danger" onclick="sum()">Calculate</button>
+        <br>
+        <div class=" resultSum"></div><br>
+
+        <div>câu 2. Đếm các số dương</div>
+        <br>
+        <button class="btn btn-danger" onclick="countPositiveNumber()">Calculate</button>
+        <br>
+        <div class=" resultCountPositiveNumber"></div><br>
+
+
+        <div>câu 3. Tìm số nhỏ nhất</div>
+        <br>
+        <button class="btn btn-danger" onclick="findMinNum()">Calculate</button>
+        <br>
+        <div class=" resultFindMinNum"></div><br>
+
+        <div>câu 4. Tìm số dương nhỏ nhất</div>
+        <br>
+        <button class="btn btn-danger" onclick="findPositiveMinNum()">Calculate</button>
+        <br>
+        <div class=" resultFindPositiveMinNum"></div><br>
+
+        <div>câu 5. Tìm số chẵn cuối cùng trong mảng</div>
+        <br>
+        <button class="btn btn-danger" onclick="findLastEvenNumber()">Calculate</button>
+        <br>
+        <div class="resultFindLastEvenNum"></div><br>
+
+        <div>câu 6. đổi chỗ 2 số</div>
+
+        <label for="position1">position1:</label>
+        <input type="number" id="position1" min="0">
+        <br>
+
+        <label for="position2">position2:</label>
+        <input type="number" id="position2" min="0">
+        <br>
+        <button class="btn btn-primary" onclick="swapNumbers()">Swap Numbers</button>
+        <br>
+        <div class="resultSwapNumbers"></div><br>
+
+        <div>câu 7. sắp xếp mảng theo thứ tự tăng dần</div>
+
+        <button class="btn btn-primary" onclick="sortNumber()">Sort Numbers</button>
+        <br>
+        <div class="resultSortNumber"></div><br>
+
+        <div>câu 8. Tìm số nguyên tố đầu tiên trong mảng</div>
+        <button class="btn btn-primary" onclick="findTheFirstPrimeNumber()">Find Prime Number</button>
+        <br>
+        <div class="resultFindTheFirstPrimeNumber"></div><br>
+
+        <div>câu 9. Đếm số lượng số nguyên trong mảng số thực</div>
+        <br>
+        <label for="realNumber">Nhập số thực:</label>
+        <input type="text" name="realNumber" id="realNumber" class="form-control" placeholder=""><br>
+        <button class="btn btn-success" onclick="addRealNumber()">Thêm số thực</button>
+        <br><br>
+        <div>Kết quả thêm số thực:</div>
+        <div class="resultAddRealNumber"></div>
+        <br>
+        <button class="btn btn-danger" onclick="countAndDisplayIntegers()">Đếm số nguyên trong mảng số thực</button>
+        <br>
+        <div class="resultCountIntegers"></div>
+
+        <div>câu 10. So sánh số lượng số dương và số lượng số âm trong mảng số thực</div>
+        <br>
+        <button class="btn btn-danger" onclick="comparePositiveAndNegativeNumbers(realNumbers)">So sánh số lượng số dương và số lượng số âm</button>
+        <br>
+        <div class="resultCompareNumbers"></div>
+        
+
+    </div>
+
+
+
+
+    <script src="BTVN.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
